@@ -37,6 +37,13 @@
     animation: clouds-animation 20s infinite linear;
 }
 
+
+.reload{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 @keyframes pipe-animation {
     from {
         right: -80px;

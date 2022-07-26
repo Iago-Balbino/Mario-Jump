@@ -1,6 +1,6 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
-
+const reload = document.querySelector('.reload')
 
 const jump = () => {
     mario.classList.add('jump');
@@ -28,7 +28,13 @@ const loop = setInterval(() => {
         mario.src = './images/game-over.png';
         mario.style.width = '75px'
         mario.style.marginLeft = '50px'
+
+        reload.src = "./images/reload.png";
     
+        reload.addEventListener("click", function(){
+            location.reload();
+        });
+
         clearInterval(loop);
     }
     
